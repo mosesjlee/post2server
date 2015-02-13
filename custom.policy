@@ -1,0 +1,8 @@
+grant{
+  permission java.security.AllPermission;  
+};
+
+//To set our own custom.policy file add this to the project property -> run -> vm arguments
+// -Djava.security.policy=<Path To Your Policy File>
+//Example
+// -Djava.security.policy=/Users/moseslee/NetBeansProjects/rmitest/src/rmitest/custom.policy
