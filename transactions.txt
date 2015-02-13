@@ -1,0 +1,19 @@
+Felix Ramirez
+1111 7
+1112 7
+1111 9
+1111 4
+1111 6
+1111 5
+Payment Credit 12334568
+
+Felippe Sales
+1113 1
+1112 6
+1111 6
+Payment Check 12334543 100.00
+
+John Smith
+1112 2
+Payment Cash 100.00
+		
