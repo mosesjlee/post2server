@@ -1,5 +1,7 @@
 package post2;
 
+import java.io.Serializable;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,9 +11,10 @@ package post2;
 /**
  *
  * @author moseslee
+ * Implements serializable in order to pass through RMI
  */
 
-public class Product 
+public class Product implements Serializable
 {
     private String upc;
     private String name;
