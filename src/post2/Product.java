@@ -16,6 +16,7 @@ import java.io.Serializable;
 
 public class Product implements Serializable
 {
+    
     private String upc;
     private String name;
     double price;
