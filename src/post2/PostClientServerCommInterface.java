@@ -25,17 +25,6 @@ public interface PostClientServerCommInterface extends java.rmi.Remote {
     public double getAmountReturnedFromHostToClient()
             throws RemoteException;
     
-    //Client sending information to the server
-    public void sendCustomerNameFromClientToHost(String customerName)
-            throws RemoteException;
-    public void sendPaymentTypeFromClienToHost(String paymentType)
-            throws RemoteException;
-    public void sendPaymentAmountFromClientToHost(double amount)
-            throws RemoteException;
-    public void sendCheckOrCreditNumFromClientToHost(String num)
-            throws RemoteException;
-    public void sendTransactionDateAndTimeFromClientToHost(String date)
-            throws RemoteException;
-    public void sendPurchasedProductsListFromClientToHost(ArrayList<Product> prodList)
+    public void getInvoiceFormObjectFromClientToHost()
             throws RemoteException;
 }
