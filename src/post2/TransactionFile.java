@@ -123,7 +123,7 @@ public class TransactionFile
             {
                 p = new CashPayment();
             }
-            Transaction t = new Transaction(names.get(0),p,myProducts);            
+            Transaction t = new Transaction(names.get(0),p,myProducts, "");            
             if(p instanceof CheckPayment || p instanceof CashPayment){t.setAmountTendered(amount);}
             transactions.add(t);
             names.clear();

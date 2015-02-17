@@ -48,7 +48,7 @@ public class Transaction
          * @param pay payment object. Could be credit, check, cash payment
          * @param custProdList list of customer's valid product
          */
-        Transaction(String name, Payment pay, ArrayList <Product> custProdList)
+        Transaction(String name, Payment pay, ArrayList <Product> custProdList, String dAndT)
         {
            //Save default 
            custName = name;
@@ -60,9 +60,7 @@ public class Transaction
            customerPayment = pay;
            
            //Create a date object to get relevant date information
-           d = new Date();
-           dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-           dateAndTime = dateFormat.format(d);
+           dateAndTime = dAndT;
            
            //Check to see if the payment is valid
            setValidTransaction();

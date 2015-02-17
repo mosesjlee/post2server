@@ -25,6 +25,6 @@ public interface PostClientServerCommInterface extends java.rmi.Remote {
     public double getAmountReturnedFromHostToClient()
             throws RemoteException;
     
-    public void getInvoiceFormObjectFromClientToHost()
+    public void sendInvoiceFormObjectFromClientToHost(InvoiceForm invoice)
             throws RemoteException;
 }
