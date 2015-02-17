@@ -21,7 +21,7 @@ public class Transaction
 	double amountTendered;                         //amount paid
 	double amountReturned;                         //change
 	boolean validTransaction;                      //if its valid payment
-	Payment payType;                               //Payment object 
+	Payment customerPayment;                               //Payment object 
 	String custName;                               //Customers name
         String dateAndTime;                            //Date and Time
         String type;                                   //Type of payment name
@@ -57,7 +57,7 @@ public class Transaction
            else if(pay instanceof CheckPayment) type = checkType;
            else if(pay instanceof CashPayment) type = cashType;
            
-           payType = pay;
+           customerPayment = pay;
            
            //Create a date object to get relevant date information
            d = new Date();
@@ -155,7 +155,7 @@ public class Transaction
          */
         private void setValidTransaction()
         {
-            validTransaction = payType.isValid();
+            validTransaction = customerPayment.isValid();
         }
        
         
@@ -183,7 +183,7 @@ public class Transaction
          */
         public Payment getPayType()
         {
-            return payType;
+            return customerPayment;
         }
         public String getType()
         {
