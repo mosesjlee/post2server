@@ -17,40 +17,48 @@ public class PostClientServerComm extends UnicastRemoteObject
 implements PostClientServerCommInterface
 {
     InvoiceForm invoice;
+    ArrayList <Product> productDBList;
+    POST postReference;
     
-    public PostClientServerComm() 
+    public PostClientServerComm(POST p) 
             throws RemoteException
     {
-        
+        //Get the reference to the parent POST object
+        postReference = p;
     }
     
+    /**
+     *
+     * @return
+     * @throws RemoteException
+     */
     public ArrayList<Product> getProductListFromHostToClient()
             throws RemoteException
     {
-        return null;
+        return postReference.getProductDataBaseList();
     }
     
     public boolean getIsPaymentValidFromHostToClient()
             throws RemoteException
     {
-        return true;
+        return postReference.getCurrentTransaction().isValidTransaction();
     }
         
     public double getFinalTotalPriceFromHostToClient()
             throws RemoteException
     {
-        return 0.0;
+        return postReference.getCurrentTransaction().getTotalPrice();
     }
     public double getAmountReturnedFromHostToClient()
             throws RemoteException
     {
-        return 0.0;
+        return postReference.getCurrentTransaction().getAmountReturned();
     }
     
     public void sendInvoiceFormObjectFromClientToHost(InvoiceForm invoice)
             throws RemoteException
     {
-        this.invoice = invoice;
+        postReference.setCurrentInvoiceForm(invoice);
+        postReference.processTransaction();
     }
-    
 }

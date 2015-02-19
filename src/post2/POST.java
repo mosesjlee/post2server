@@ -38,6 +38,11 @@ public class POST {
         return productDB.getProducts();
     }
     
+    public Transaction getCurrentTransaction()
+    {
+        return currentTransaction;
+    }
+    
     public void processTransaction()
     {
         if(form == null) return;
