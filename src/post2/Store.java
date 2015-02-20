@@ -12,14 +12,14 @@ import java.util.ArrayList;
  *
  * @author moseslee
  */
-public class POST {
+public class Store {
     Transaction currentTransaction = null;
     Payment customerPayment = null;
     Receipt currentReceipt = null;
     InvoiceForm form = null;
     ProductsFile productDB = null;
     
-    public POST()
+    public Store()
     {
     }
     
