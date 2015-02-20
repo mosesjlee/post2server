@@ -80,6 +80,7 @@ public class Store {
         if(currentTransaction != null)
         {
             currentReceipt = new Receipt(currentTransaction);
+            currentReceipt.WriteFile("SalesLog");
         }
     }
     

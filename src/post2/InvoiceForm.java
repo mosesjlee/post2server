@@ -106,6 +106,4 @@ public class InvoiceForm  implements Serializable {
         this.purchasedProductsList = purchasedProductsList;
     }
     
-    
-    
 }
