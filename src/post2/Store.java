@@ -60,11 +60,11 @@ public class Store {
         
         ArrayList<Product> purchasedProductList = form.getPurchasedProductsList();
         
-        if(paymentType.equals("credit")){
+        if(paymentType.equalsIgnoreCase("credit")){
             customerPayment = new CreditPayment(accountNumber);
-        } else if(paymentType.equals("check")) {
+        } else if(paymentType.equalsIgnoreCase("check")) {
             customerPayment = new CheckPayment(accountNumber);
-        } else if (paymentType.equals("cash")) {
+        } else if (paymentType.equalsIgnoreCase("cash")) {
             customerPayment = new CashPayment();
         } else {
             System.out.println("Not a valid payment form");

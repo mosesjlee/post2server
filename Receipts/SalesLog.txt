@@ -1,0 +1,18 @@
+--------------------
+STORE NAME 
+
+
+James Hettfield Time: Tue, 24 Feb 2015 12:23:19 PST
+
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Item egg 1 @ 0.5
+Total: 4.0
+Amount Tendered: Paid by check
+Amount Returned: -4.0
+--------------------
