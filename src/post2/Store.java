@@ -79,6 +79,7 @@ public class Store {
     {
         if(currentTransaction != null)
         {
+            System.out.println("Printing Receipt");
             currentReceipt = new Receipt(currentTransaction);
             currentReceipt.WriteFile("SalesLog");
         }

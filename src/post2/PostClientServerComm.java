@@ -60,5 +60,6 @@ implements PostClientServerCommInterface
     {
         storeReference.setCurrentInvoiceForm(invoice);
         storeReference.processTransaction();
+        storeReference.printReceipt();
     }
 }
