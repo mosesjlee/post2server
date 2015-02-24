@@ -10,6 +10,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
 import java.io.File;
+import java.text.DecimalFormat;
 
 public class Receipt {
     Transaction currTrans;
@@ -22,6 +23,7 @@ public class Receipt {
     private double totalPrice;
     private double amountReturned;
     private double amountTendered;
+    DecimalFormat df = new DecimalFormat("0.00##");
     
     
     Receipt(Transaction t)
@@ -61,11 +63,11 @@ public class Receipt {
             {
             out.println("Item " + p.getName() + " " + 
                     currTrans.getQuantity(p) + " @ " + 
-                    String.format("%.2f", p.getPrice()));
+                    df.format(p.getPrice()));
             foundProducts.add(p);
             }
         }
-        out.println("Total: " + currTrans.getTotalPrice());
+        out.println("Total: " + df.format(currTrans.getTotalPrice()));
         out.print("Amount Tendered: ");
         if (currTrans.getType().equals("cash"))
         {
@@ -77,7 +79,7 @@ public class Receipt {
         else{
             out.println("num is credit card #");
         }
-        out.println("Amount Returned: " + currTrans.getAmountReturned());
+        out.println("Amount Returned: " + df.format(currTrans.getAmountReturned()));
         out.println("--------------------");
         out.close();
         }
