@@ -73,6 +73,7 @@ public class Store {
           
         currentTransaction = new Transaction(name, customerPayment, 
                                     purchasedProductList, dateAndTime); 
+        currentTransaction.setAmountTendered(form.getAmountPaid());
     }
     
     public void printReceipt()

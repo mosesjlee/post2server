@@ -59,7 +59,9 @@ public class Receipt {
         for (Product p : currTrans.getProducts()){
             if (foundProducts.contains(p)==false)
             {
-            out.println("Item " + p.getName() + " " + currTrans.getQuantity(p) + " @ " + p.getPrice());
+            out.println("Item " + p.getName() + " " + 
+                    currTrans.getQuantity(p) + " @ " + 
+                    String.format("%.2f", p.getPrice()));
             foundProducts.add(p);
             }
         }
