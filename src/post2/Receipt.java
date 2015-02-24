@@ -56,7 +56,8 @@ public class Receipt {
         out.println("--------------------");
         out.println("STORE NAME \n");
         out.println("");
-        out.println(currTrans.getName() + " " + currTrans.getDateAndTime());
+        out.println("Customer Name: " + currTrans.getName());
+        out.println(currTrans.getDateAndTime());
         out.println("");
         for (Product p : currTrans.getProducts()){
             if (foundProducts.contains(p)==false)
