@@ -65,3 +65,34 @@ Total: 942.2000000000003
 Amount Tendered: Paid by check
 Amount Returned: 0.0
 --------------------
+--------------------
+STORE NAME 
+
+
+John Doe Time: Tue, 24 Feb 2015 13:33:33 PST
+
+Item egg 1 @ 0.50
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item boat 1 @ 45.95
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Item bread 1 @ 2.65
+Total: 573.10
+Amount Tendered: Paid by check
+Amount Returned: 0.00
+--------------------

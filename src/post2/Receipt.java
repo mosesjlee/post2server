@@ -68,16 +68,18 @@ public class Receipt {
             }
         }
         out.println("Total: " + df.format(currTrans.getTotalPrice()));
-        out.print("Amount Tendered: ");
+        out.print("Amount Tendered: " + df.format(currTrans.getAmountTendered()));
         if (currTrans.getType().equals("cash"))
         {
-            out.println(currTrans.getAmountTendered());
+            out.println("Cash");
         }
         else if (currTrans.getType().equals("check")){ 
-           out.println("Paid by " + currTrans.getType());
+           out.println("check #: " + 
+                   ((CheckPayment)currTrans.getPayType()).getCheckNumber());
         }
         else{
-            out.println("num is credit card #");
+            out.println("credit card #: " + 
+                    ((CreditPayment)currTrans.getPayType()).getCreditNumber());
         }
         out.println("Amount Returned: " + df.format(currTrans.getAmountReturned()));
         out.println("--------------------");
