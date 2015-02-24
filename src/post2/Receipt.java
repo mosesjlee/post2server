@@ -68,7 +68,7 @@ public class Receipt {
             }
         }
         out.println("Total: " + df.format(currTrans.getTotalPrice()));
-        out.print("Amount Tendered: " + df.format(currTrans.getAmountTendered()));
+        out.println("Amount Tendered: " + df.format(currTrans.getAmountTendered()));
         if (currTrans.getType().equals("cash"))
         {
             out.println("Cash");
